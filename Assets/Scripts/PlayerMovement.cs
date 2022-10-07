@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode interacKey = KeyCode.E;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -34,6 +35,10 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+
+    [Header("Grabber")]
+
+    public GameObject grabPosition;
 
     private void Start()
     {
@@ -76,6 +81,18 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
             Invoke(nameof(ResetJump), jumpCooldown);
+        }
+
+        if (Input.GetKey(interacKey))
+        {
+            if(grabPosition.GetComponent<GrabChecker>().canGrab && !grabPosition.GetComponent<GrabChecker>().grabbed){
+                grabPosition.GetComponent<GrabChecker>().target.transform.parent = grabPosition.transform;
+                grabPosition.GetComponent<GrabChecker>().grabbed = true;
+                grabPosition.GetComponent<GrabChecker>().target.GetComponent<Rigidbody>().isKinematic = true;
+            }
+            else if(grabPosition.GetComponent<GrabChecker>().grabbed){
+                grabPosition.GetComponent<GrabChecker>().target.GetComponent<Rigidbody>().isKinematic = false;
+            }
         }
     }
 

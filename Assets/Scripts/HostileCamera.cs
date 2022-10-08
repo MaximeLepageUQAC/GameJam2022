@@ -9,14 +9,19 @@ public class HostileCamera : MonoBehaviour
     public Light redLight;
     private Animator anim;
 
+    public GameObject AlarmTrigger;
+
     void Start() {
         anim = transform.parent.GetComponent<Animator>();
     }
+
+
     void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "Player"){
             light.enabled = false;
             redLight.enabled = true;
             anim.enabled = false;
+            AlarmTrigger.GetComponent<AlarmLightTrigger>().enabled = true;
         }
     }
 
@@ -31,6 +36,7 @@ public class HostileCamera : MonoBehaviour
             light.enabled = true;
             redLight.enabled = false;
             anim.enabled = true;
+            AlarmTrigger.GetComponent<AlarmLightTrigger>().enabled = false;
         }
     }
 

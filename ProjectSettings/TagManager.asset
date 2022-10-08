@@ -36,7 +36,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - interactable
   - whatIsGround
   - Ground
   m_SortingLayers:

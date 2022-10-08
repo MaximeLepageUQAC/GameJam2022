@@ -8,6 +8,8 @@ public class CryingHeadController : MonoBehaviour
     public AudioSource globalSource;
     public AudioSource audioSource;
 
+    public AudioSource walkingSource;
+
     public AudioClip crawl_sound;
     public AudioClip scream_sound;
 
@@ -40,5 +42,9 @@ public class CryingHeadController : MonoBehaviour
     void Audio_StartScream(){
         audioSource.clip = scream_sound;
         audioSource.Play();
+    }
+
+    void Audio_StartStomping(){
+        walkingSource.Play();
     }
 }

@@ -14236,6 +14236,11 @@ PrefabInstance:
       propertyPath: garageDoor
       value: 
       objectReference: {fileID: 856721996}
+    - target: {fileID: 8436534190056967008, guid: 15a85cf432aeb584ab104f6a9bd0d63a,
+        type: 3}
+      propertyPath: state_open
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8436534190056967015, guid: 15a85cf432aeb584ab104f6a9bd0d63a,
         type: 3}
       propertyPath: m_RootOrder

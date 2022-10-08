@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 56c750205476c384c8112e32e036c7cb,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -635,6 +636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FPS-ARM
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679545638617266006, guid: 0f703c4697ec0314fab58229e57c0c5e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f703c4697ec0314fab58229e57c0c5e, type: 3}

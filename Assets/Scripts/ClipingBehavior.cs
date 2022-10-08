@@ -6,7 +6,7 @@ public class ClipingBehavior : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)  
     {
-        if(other.gameObject.tag == "Player" && other.gameObject.GetComponent<PlayerClipingScript>().IsCollidingCube){
+        if(other.gameObject.tag == "Player"){
             gameObject.transform.parent.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }

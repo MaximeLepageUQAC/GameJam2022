@@ -38,9 +38,9 @@ public class GarageDoorActivator : MonoBehaviour
             {
                 garageDoor.GetComponent<GarageDoorAnimController>().OpenDoor();
 
-                if (!gameObject.GetComponent<LeverSwitchController>().isOn)
+                if (!gameObject.GetComponent<LeverSwitchAnimController>().isOn)
                 {
-                    gameObject.GetComponent<LeverSwitchController>().LeverOn();
+                    gameObject.GetComponent<LeverSwitchAnimController>().LeverOn();
                 }
             }
         }

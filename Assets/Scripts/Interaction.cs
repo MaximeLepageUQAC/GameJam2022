@@ -19,7 +19,7 @@ public class Interaction : MonoBehaviour
         {
             var target = hit.collider.gameObject;
 
-            Debug.Log($"looking at {target.name}", this);
+            //Debug.Log($"looking at {target.name}", this);
             target.SendMessage("IsLookedAt", true);
         }
     }

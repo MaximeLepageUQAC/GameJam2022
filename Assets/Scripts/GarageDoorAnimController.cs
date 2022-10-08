@@ -25,6 +25,7 @@ public class GarageDoorAnimController : MonoBehaviour
         anim.Play("CloseDoor");
         isOpenned=false;
     }
+
     
 
     void Audio_Start(){

@@ -3322,7 +3322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e035ad4408ba2c549bfb717cb4367019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 2
+  nextScene: 3
 --- !u!4 &551198412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3902140329364952267, guid: 0fcdeb1cdb8902b46bf93f1ad9f63890,

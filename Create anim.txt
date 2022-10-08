@@ -1,0 +1,13 @@
+Sur le gameObject mettre un animator
+
+Créer dans le dossier d'animation un Animator Controller
+
+Assigner l'animator controller à l'animator
+
+Double click sur une animation existante
+
+Click le gameobject (Hierarchie)
+
+Click sur create (Animation inspector)
+
+Lui donner un nom

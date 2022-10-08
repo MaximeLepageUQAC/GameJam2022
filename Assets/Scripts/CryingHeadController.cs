@@ -5,6 +5,12 @@ using UnityEngine;
 public class CryingHeadController : MonoBehaviour
 {
 
+    public AudioSource globalSource;
+    public AudioSource audioSource;
+
+    public AudioClip crawl_sound;
+    public AudioClip scream_sound;
+
     private Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -17,5 +23,22 @@ public class CryingHeadController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void Audio_Crawl(){
+        globalSource.clip = crawl_sound;
+        globalSource.Play();
+    }
+
+    void Audio_Stop(){
+        audioSource.Stop();
+    }
+    void Audio_StopGlobal(){
+        globalSource.Stop();
+    }
+
+    void Audio_StartScream(){
+        audioSource.clip = scream_sound;
+        audioSource.Play();
     }
 }

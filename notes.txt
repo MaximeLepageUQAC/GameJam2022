@@ -1,0 +1,18 @@
+Horror:
+
+Physic based
+Stealth
+
+FPS
+
+cliping with objects
+physic object border jumping
+Grabbing in walls
+
+hide with the cube
+
+Camera/Monster
+
+Goal: Escape
+
+Sound: horror, blinking light, static, self footstep, monster footsteps

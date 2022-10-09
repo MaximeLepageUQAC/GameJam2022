@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioController : MonoBehaviour
 {
@@ -20,5 +21,9 @@ public class AudioController : MonoBehaviour
 
     void Audio_CarKeys(){
         carSource.Play();
+    }
+
+    void EndScene(){
+        SceneManager.LoadScene(7);
     }
 }

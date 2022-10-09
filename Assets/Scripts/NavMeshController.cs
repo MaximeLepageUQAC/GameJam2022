@@ -7,6 +7,7 @@ public class NavMeshController : MonoBehaviour
 {
 
     [SerializeField] private Transform movePositionTransform;
+    [SerializeField] private AudioSource audioSource;
 
     private NavMeshAgent navMeshAgent;
     // Start is called before the first frame update
@@ -19,6 +20,14 @@ public class NavMeshController : MonoBehaviour
     void Update()
     {
         navMeshAgent.destination = movePositionTransform.position;
+    }
+
+    void OnEnable(){
+        audioSource.Play();
+    }
+
+    void OnDisable(){
+        audioSource.Stop();
     }
 
 }

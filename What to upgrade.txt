@@ -1,0 +1,9 @@
+Fix Garage door in warehouse
+
+Add more indication
+
+Remake the prefabs that require an empty parent to be at 0,0,0
+
+Fix the pickup
+
+Add a no gas sound on the generator

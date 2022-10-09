@@ -28291,6 +28291,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7766596347089342176, guid: 0acad35c76840ba4e9738a0851d07824,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345228299005536002, guid: 0acad35c76840ba4e9738a0851d07824,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8428595598958771547, guid: 0acad35c76840ba4e9738a0851d07824,
         type: 3}
       propertyPath: m_RootOrder
@@ -28389,6 +28399,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 1
   rb: {fileID: 2142117094}
+--- !u!65 &2142117100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142117093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.503308, y: 2, z: 0.672478}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!43 &2147147767
 Mesh:
   m_ObjectHideFlags: 0

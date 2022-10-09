@@ -9,6 +9,7 @@ public class GarageDoorAnimController : MonoBehaviour
     public AudioSource audioSource;
     public bool isOpenned = false;
 
+
     void Start()
     {
         anim = GetComponent<Animator>();

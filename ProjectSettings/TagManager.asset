@@ -7,6 +7,7 @@ TagManager:
   - HappyCube
   - Ground
   - Key
+  - Gas
   layers:
   - Default
   - TransparentFX
@@ -36,7 +37,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Gas
   - interactable
   - whatIsGround
   - Ground

@@ -8,25 +8,27 @@ public class CarController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip engineClip;
     [SerializeField] private AudioClip startedClip;
+    [SerializeField] private GameObject keys;
 
 
-    private int attemps = 0;
+    private bool canLeave = false;
     private bool isLookedAt;
 
     void StartCar(){
-        if(attemps == 3){
+
+        if(canLeave){
+            SceneManager.LoadScene(5);
+        }
+        else if(keys.GetComponent<KeyController>().isPicked){
             audioSource.Stop();
             audioSource.clip = startedClip;
             audioSource.Play();
-        }
-        else if(attemps >= 3){
-            SceneManager.LoadScene(5);
+            canLeave = true;
         }
         else{
             audioSource.Stop();
             audioSource.clip = engineClip;
             audioSource.Play();
-            attemps++;
         }
     }
 

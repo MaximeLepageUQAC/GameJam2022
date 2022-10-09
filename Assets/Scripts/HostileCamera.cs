@@ -42,10 +42,10 @@ public class HostileCamera : MonoBehaviour
             redLight.enabled = false;
             anim.enabled = true;
             if(AlarmTrigger.GetComponent<CrawlerController>()){
-                AlarmTrigger.GetComponent<CrawlerController>().enabled = true;
+                AlarmTrigger.GetComponent<CrawlerController>().enabled = false;
             }
             else{
-                AlarmTrigger.GetComponent<AlarmLightTrigger>().enabled = true;
+                AlarmTrigger.GetComponent<AlarmLightTrigger>().enabled = false;
             }
         }
     }

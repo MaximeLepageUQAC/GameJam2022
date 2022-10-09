@@ -20,4 +20,5 @@ public class NavMeshController : MonoBehaviour
     {
         navMeshAgent.destination = movePositionTransform.position;
     }
+
 }

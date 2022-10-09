@@ -17,7 +17,7 @@ public class CarController : MonoBehaviour
     void StartCar(){
 
         if(canLeave){
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
         }
         else if(keys.GetComponent<KeyController>().isPicked){
             audioSource.Stop();

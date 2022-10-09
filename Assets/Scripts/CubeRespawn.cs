@@ -6,20 +6,20 @@ public class CubeRespawn : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private Transform spawnPoint;
+    private Vector3 spawnPoint;
 
     public float respawnTreshold;
     void Start()
     {
-        spawnPoint = gameObject.transform;
+        spawnPoint = gameObject.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.y <= (spawnPoint.position.y - respawnTreshold) || gameObject.transform.position.y >= (spawnPoint.position.y + respawnTreshold))
+        if(gameObject.transform.position.y <= (spawnPoint.y - respawnTreshold) || gameObject.transform.position.y >= (spawnPoint.y + respawnTreshold))
         {
-            gameObject.transform.position = spawnPoint.position;
+            gameObject.transform.position = spawnPoint;
         }
     }
 }

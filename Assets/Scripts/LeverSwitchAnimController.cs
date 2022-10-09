@@ -11,6 +11,7 @@ public class LeverSwitchAnimController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        anim.Play("LevelOn");
     }
 
     public void LeverOn()

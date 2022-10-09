@@ -10,7 +10,8 @@ public class GrabChecker : MonoBehaviour
 
     void OnTriggerEnter(Collider other)  
     {
-        if(other.gameObject.tag == "HappyCube"){
+        if(other.gameObject.tag == "HappyCube" || other.gameObject.tag == "Gas")
+        {
             canGrab = true;
             target = other.gameObject;
         }

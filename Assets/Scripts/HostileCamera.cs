@@ -21,7 +21,12 @@ public class HostileCamera : MonoBehaviour
             light.enabled = false;
             redLight.enabled = true;
             anim.enabled = false;
-            AlarmTrigger.GetComponent<AlarmLightTrigger>().enabled = true;
+            if(AlarmTrigger.GetComponent<CrawlerController>()){
+                AlarmTrigger.GetComponent<CrawlerController>().enabled = true;
+            }
+            else{
+                AlarmTrigger.GetComponent<AlarmLightTrigger>().enabled = true;
+            }
         }
     }
 
@@ -36,7 +41,12 @@ public class HostileCamera : MonoBehaviour
             light.enabled = true;
             redLight.enabled = false;
             anim.enabled = true;
-            AlarmTrigger.GetComponent<AlarmLightTrigger>().enabled = false;
+            if(AlarmTrigger.GetComponent<CrawlerController>()){
+                AlarmTrigger.GetComponent<CrawlerController>().enabled = false;
+            }
+            else{
+                AlarmTrigger.GetComponent<AlarmLightTrigger>().enabled = false;
+            }
         }
     }
 
